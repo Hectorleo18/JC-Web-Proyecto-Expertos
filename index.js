@@ -36,6 +36,7 @@ app.use(express.static("public"));
 var loginVerificado = express.static("public");
 
 app.set('port', (process.env.PORT || 3000));
+var url = process.env.MONGOLAB_URI;
 app.use(session({
     secret:"jcweb_db",
     resave:true, 
