@@ -8,8 +8,8 @@ class Database{
         this.conectar();
     }
     conectar(){
-        mongoose.connect(`mongo "mongodb+srv://cmsjcwe2019-axr6r.mongodb.net/test"  --username JuanCarlos`)
-        .then(()=>console.log(`se conecto a la base de datos ${nombreBaseDatos}`))
+        mongoose.connect(SET MONGOLAB_URI=`mongo "mongodb+srv://cmsjcwe2019-axr6r.mongodb.net/test"  --username JuanCarlos`)
+        .then(()=>console.log(`se conecto a la base de datos ))
         .catch(error=>{
            console.error(JSON.stringify(error)) ;
         });
